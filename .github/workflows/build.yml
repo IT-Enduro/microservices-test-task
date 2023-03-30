@@ -43,7 +43,7 @@ jobs:
           sleep 30
 
           greeting=$(curl -s http://localhost:8080)
-          if [ "$greeting" != "Hello, Alex" ]; then
-            echo "Expected [Hello, Alex], but greeting from docker [$greeting] doesn't macthes"
+          if [ "$greeting" != "Greetings from Alex!" ]; then
+            echo "Expected [Greetings from Alex!], but greeting from docker [$greeting] doesn't macthes"
             exit 1
           fi
