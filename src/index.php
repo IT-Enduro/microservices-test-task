@@ -1,3 +1,3 @@
 <?php
 
-echo getenv('GREETING_NAME');
+echo 'Hello, ' . getenv('GREETING_NAME');
